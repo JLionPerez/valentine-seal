@@ -10,15 +10,14 @@ export default function Home() {
 
   function handleClick() {
     image == image1 ? setImage(image2) : setImage(image1)
-    image == image2 ? setText("I love you seal-ots!") : setText("")
+    image == image1 ? setText("I love you seal-ots!") : setText("")
   }
 
   return (
-    
-    <div className="flex items-center justify-center h-dvh bg-rose-400 text-white">
-      <p>{text}</p>
-      <div onClick={handleClick}>
-        <img src={image} alt="seal"/>
+    <div className="grid grid-rows-3 h-dvh bg-rose-400 text-white gap-20" onClick={handleClick}>
+      <p className="flex justify-center items-center">{text}</p>
+      <div className="flex justify-center items-center">
+        <img className="h-100 w-300"src={image} alt="seal"/>
       </div>
     </div>
   )
