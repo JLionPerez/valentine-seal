@@ -23,17 +23,25 @@ body {
   color: var(--foreground);
   font-family: cursive;
 }
-/* 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+
+@theme {
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 
-.fade-in {
-  animation: fadeIn 1.5s ease-in-out forwards;
-  opacity: 0
-} */
+@theme {
+  @keyframes bouncing {
+    0%, 50%, 100% {
+      transform: translateY(0);
+    }
+    25%, 75% {
+      transform: translateY(-15px);
+    }
+  }
+}
