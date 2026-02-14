@@ -20,13 +20,13 @@ export default function Home() {
   }
 
   return (
-    <div className="grid grid-rows-2 h-dvh text-white p-10 bg-[url(/heart-background1.png)] bg-center bg-repeat">
-      <div className="flex justify-center items-center font-comfortaa text-3xl">
-        <p className={`${isText ? ' animate-[fade-in_0.75s_ease-in] ' : ' opacity-0 '}`}>I love you seal-ots!</p>
+    <div className="flex flex-col justify-center gap-10 h-dvh text-white p-10 bg-[url(/heart-background1.png)] bg-center bg-repeat">
+      <div className="flex justify-center items-center font-comfortaa text-2xl text-center">
+        <p className={`${isText ? ' animate-[fade-in_1s_ease-in] ' : ' opacity-0 '}`}>I love you seal-ots! ❤️</p>
       </div>
       <div className="flex justify-center items-center">
         <div onClick={handleClick} onAnimationEnd={handleAnimateEnd} className={`${isBounce ? ' animate-[bouncing_0.5s_ease-in] ' : ''}`}>
-          <img className="h-auto w-100"src={image} alt="seal"/>
+          <img className="drop-shadow-lg h-auto w-100"src={image} alt="seal"/>
         </div>
       </div>
     </div>

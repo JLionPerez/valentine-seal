@@ -3,7 +3,7 @@ import "./globals.css";
 
 const comfortaa = Comfortaa({
   variable: "--font-comfortaa",
-  weight: '400',
+  weight: '700',
   subsets: ['latin'],
 })
 
